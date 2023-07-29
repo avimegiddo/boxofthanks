@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      input[type="text"] {
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      input[type="button"] {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: #00b8d4;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      body {
+        background-color: #d3d3d3;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" name="name" placeholder="Your Name (optional)">
+      <br><br>
+      <input type="text" name="recipient" placeholder="Recipient's Name">
+      <br><br>
+      <input type="text" name="kindness" placeholder="Act of Kindness">
+      <br><br>
+      <input type="button" value="Submit" onclick="google.script.run.processForm(this.parentNode)">
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
